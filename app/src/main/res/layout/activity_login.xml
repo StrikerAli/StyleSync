@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/groupStylegray_50">
+
+    <LinearLayout
+        android:id="@+id/linearImagefull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_11pxh"
+        android:paddingEnd="@dimen/_11pxh"
+        android:paddingTop="@dimen/_3pxv"
+        android:paddingBottom="@dimen/_3pxv"
+        android:layout_marginTop="@dimen/_6pxv"
+        style="@style/groupStylewhite_A700">
+
+        <FrameLayout
+            android:id="@+id/frameStackarrowleft"
+            android:layout_width="@dimen/_368pxh"
+            android:layout_height="@dimen/_343pxv"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle_289"
+                tools:ignore="ContentDescription"/>
+
+            <LinearLayout
+                android:id="@+id/linearColumnarrowleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageArrowleftOne"
+                    android:layout_width="@dimen/_32pxh"
+                    android:layout_height="@dimen/_32pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_left"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_arrow_left" />
+
+                <TextView
+                    android:id="@+id/txtWelcomeback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_108pxv"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    style="@style/txtWorkSansbold32"
+                    tools:text="@string/lbl_welcome_back" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:gravity="center_horizontal"
+                    android:text="@string/msg_yay_you_re_back"
+                    style="@style/txtLatobold14"
+                    tools:text="@string/msg_yay_you_re_back" />
+
+                <ImageView
+                    android:id="@+id/imageLogooneOne"
+                    android:layout_width="@dimen/_70pxh"
+                    android:layout_height="@dimen/_59pxh"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_33pxv"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_logo_1"
+                    tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_47pxv"
+            android:layout_marginStart="@dimen/_33pxh"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAllCaps="true"
+            style="@style/txtWorkSansbold22"
+            tools:text="@string/lbl_log_in2" />
+
+        <LinearLayout
+            android:id="@+id/linearInputfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_46pxv"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingEnd="@dimen/_11pxh">
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAllCaps="true"
+                android:letterSpacing="0.07"
+                style="@style/txtMulishextrabold12"
+                tools:text="@string/lbl_email" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:background="@drawable/rectangle_bg_white_a700_border_blue_gray_400_radius_8"
+                android:drawableStart="@drawable/img_lock"
+                android:drawablePadding="@dimen/_12pxh"
+                android:paddingStart="@dimen/_12pxh"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:paddingBottom="@dimen/_13pxv"
+                android:textColorHint="@color/blue_gray_400"
+                android:ellipsize="end"
+                android:inputType="text"
+                android:text="aali.ashraf2014@gmail.com"
+                android:singleLine="true"
+                android:hint="@string/lbl_name_email_com"
+                style="@style/etSolidRoundedOutline"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearInputfield1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingEnd="@dimen/_11pxh">
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAllCaps="true"
+                android:letterSpacing="0.07"
+                style="@style/txtMulishextrabold12"
+                tools:text="@string/lbl_password" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:background="@drawable/rectangle_bg_white_a700_border_blue_gray_400_radius_8"
+                android:drawableStart="@drawable/img_trophy"
+                android:drawablePadding="@dimen/_12pxh"
+                android:paddingStart="@dimen/_12pxh"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:paddingBottom="@dimen/_13pxv"
+                android:textColorHint="@color/blue_gray_400"
+                android:ellipsize="end"
+                android:inputType="textPassword"
+                android:text="12345678"
+                android:singleLine="true"
+                android:hint="@string/lbl"
+                style="@style/etSolidRoundedOutline"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogIn"
+            style="@style/btnSolidRoundedOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:letterSpacing="0.06"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_17pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_log_in"
+            android:textAllCaps="true"
+            tools:text="@string/lbl_log_in" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/account_create_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv"
+            android:paddingBottom="@dimen/_17pxv"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Register"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:letterSpacing="0.06"
+            style="@style/btnSolidRoundedOutline"
+            tools:text="Register" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearColumnarrowLeftOne"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10pxv"
+    android:paddingTop="@dimen/_10pxv"
+    style="@style/groupStylegray_50">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_horizontal"
+        android:id="@+id/toolbarToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" app:contentInsetStart="0dp">
+        <LinearLayout android:id="@+id/linearRowarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_125pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageArrowleftOne"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_32pxh"
+                android:layout_width="@dimen/_32pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrow_left_blue_gray_800"
+                />
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCreditdebit"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                style="@style/txtLatoblack16" android:text="@string/msg_credit_debit_card"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:id="@+id/linearCardmethod"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_20pxv"
+        android:paddingEnd="@dimen/_18pxh"
+        android:paddingStart="@dimen/_18pxh" android:paddingTop="@dimen/_20pxv">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnview"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_3pxh"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_6pxv"
+            android:paddingEnd="@dimen/_7pxh"
+            android:paddingStart="@dimen/_7pxh"
+            android:paddingTop="@dimen/_6pxv" style="@style/groupStylegray_900_01cornerRadius">
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowview"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackview"
+                    android:layout_gravity="bottom"
+                    android:layout_height="@dimen/_22pxv"
+                    android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_36pxh">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_11"
+                        android:id="@+id/viewView"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_11"
+                        android:id="@+id/viewViewOne"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/imageUserOne"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_211pxh"
+                    android:layout_width="@dimen/_64pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_user_amber_300"
+                    />
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txt632691248124"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.03"
+                android:singleLine="true"
+                style="@style/txtWorkSansbold22_1" android:text="@string/msg_6326_9124"/>
+            <LinearLayout android:id="@+id/linearRowcardholder"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumncardholde"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:alpha="0.5"
+                        android:ellipsize="end"
+                        android:id="@+id/txtCardholder"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.03"
+                        android:singleLine="true"
+                        style="@style/txtPoppinsregular10" android:text="@string/lbl_card_holder"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtJohnmorrish"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.03"
+                        android:singleLine="true"
+                        style="@style/txtPoppinsbold10" android:text="Loris Karius"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumncardsave"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:alpha="0.5"
+                        android:ellipsize="end"
+                        android:id="@+id/txtCardsave"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.03"
+                        android:layout_marginLeft="@dimen/_5pxh"
+                        android:layout_marginTop="@dimen/_2pxh"
+
+                        android:singleLine="true"
+                        style="@style/txtPoppinsregular10" android:text="@string/lbl_card_save"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtOneHundredNinetyTwoThousandFortyTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_marginLeft="@dimen/_5pxh"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.03"
+                        android:singleLine="true"
+                        style="@style/txtPoppinsbold10" android:text="@string/lbl_19_2042"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncardnumbe"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCardnumber"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.03"
+                android:singleLine="true"
+                style="@style/txtWorkSansbold14" android:text="@string/lbl_card_number"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700_border_blue_gray_400_radius_5"
+                android:ellipsize="end"
+                android:hint="@string/msg_1231_2312_3123"
+                android:text="1231 2312 3123 1231"
+                android:id="@+id/etCardNumber"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.03"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_16pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:textColorHint="@color/blue_gray_400"
+                style="@style/etSolidRoundedOutline_1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowexpirationda"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearExpirationdate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtExpirationdate"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.03"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansbold14" android:text="@string/lbl_expiration_date"/>
+                <LinearLayout android:id="@+id/linearFormdefault"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_15pxh"
+                    android:paddingStart="@dimen/_15pxh"
+                    android:paddingTop="@dimen/_13pxv" style="@style/groupStylewhite_2">
+                    <EditText android:ellipsize="end"
+                        android:gravity="top"
+                        android:id="@+id/txt12twelve"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.03"
+                        android:singleLine="true"
+                        android:text="12/12"
+                        style="@style/txtPoppinsbold12"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearSecuritycode"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSecuritycode"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.03"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansbold14" android:text="@string/lbl_security_code"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_white_a700_border_blue_gray_400_radius_5"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_1219"
+                    android:id="@+id/etSecurityCode"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.03"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_16pxh"
+                    android:paddingStart="@dimen/_16pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="1219"
+                    android:textColorHint="@color/blue_gray_400"
+                    style="@style/etSolidRoundedOutline_1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCardholder"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCardholderOne"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.03"
+                android:singleLine="true"
+                style="@style/txtWorkSansbold14" android:text="@string/lbl_card_holder2"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700_border_blue_gray_400_radius_5"
+                android:ellipsize="end"
+                android:hint="Loris Karius"
+                android:text="Loris Karius"
+                android:id="@+id/etCardHolder"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.03"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_16pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:textColorHint="@color/blue_gray_400"
+                style="@style/etSolidRoundedOutline_1" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:ellipsize="end" android:gravity="center"
+        android:id="@+id/btnUseThisCard"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_45pxv"
+        android:layout_marginEnd="@dimen/_30pxh"
+        android:layout_marginStart="@dimen/_25pxh"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.06"
+        android:paddingBottom="@dimen/_17pxv"
+        android:paddingEnd="@dimen/_30pxh"
+        android:paddingStart="@dimen/_30pxh"
+        android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+        android:textAllCaps="true"
+        style="@style/btnSolidRoundedOutline_1" android:text="@string/lbl_use_this_card"/>
+</LinearLayout>

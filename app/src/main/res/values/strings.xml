@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">i210619_s_application1</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_poseidon">Poseidon</string>
+  <string name="lbl_expiration_date">Expiration Date</string>
+  <string name="lbl_rp300_000">Rp300.000</string>
+  <string name="lbl_rp750_000">Rp750.000</string>
+  <string name="lbl_back">back</string>
+  <string name="msg_welcome_to_fashion">Welcome
+to
+Fashion Hub</string>
+  <string name="lbl_hades">Hades</string>
+  <string name="msg_looks_like_something">Looks like something went wrong
+while processing your request.</string>
+  <string name="lbl_pick_discount">Pick discount</string>
+  <string name="lbl_promise">Promise</string>
+  <string name="lbl_use_this_card">Use this card</string>
+  <string name="msg_oh_snap_order_failed">Oh Snap! Order Failed</string>
+  <string name="lbl_about">About </string>
+  <string name="msg_already_have_an">Already have an account?</string>
+  <string name="lbl_zeus">Zeus</string>
+  <string name="lbl_notifecations">Notifecations </string>
+  <string name="msg_congrats_your_order">Congrats! Your Order has
+been placed</string>
+  <string name="lbl_find_products">Find Products</string>
+  <string name="lbl_rp350_000">Rp350.000</string>
+  <string name="msg_by_placing_an_order">By placing an order you agree to our
+Terms And Conditions.</string>
+  <string name="lbl_log_in">Log in</string>
+  <string name="lbl_create_account">Create Account</string>
+  <string name="lbl_security_code">Security Code</string>
+  <string name="lbl_payment_methods">Payment Methods</string>
+  <string name="lbl_log_out">Log Out</string>
+  <string name="msg_camara_goes_here">Camara goes here</string>
+  <string name="lbl_women">Women</string>
+  <string name="lbl_go_to_checkout">Go to checkout</string>
+  <string name="lbl_card_holder">CARD HOLDER</string>
+  <string name="lbl_delivery">Delivery</string>
+  <string name="msg_by_placing_an_order2">By placing an order you agree to our
+Terms</string>
+  <string name="lbl_12_12">12/12</string>
+  <string name="lbl_name">name</string>
+  <string name="lbl_and">And</string>
+  <string name="lbl_register">Register</string>
+  <string name="lbl">********</string>
+  <string name="lbl_men">Men</string>
+  <string name="lbl_john_morrish">John Morrish</string>
+  <string name="msg_your_items_has_been">Your items has been placed and is on 
+it\u2019s way to being processed</string>
+  <string name="msg_get_s_started_with">Get\u2019s started with 
+Fashion Hub</string>
+  <string name="lbl_pament">Pament</string>
+  <string name="lbl_select_method">Select Method</string>
+  <string name="lbl_clown">Clown</string>
+  <string name="lbl_email">Email</string>
+  <string name="lbl_log_in2">Log In</string>
+  <string name="msg_6326_9124">6326    9124    8124    9875</string>
+  <string name="lbl_19_2042">19/2042</string>
+  <string name="lbl_email_gmail_com">email@gmail.com</string>
+  <string name="lbl_1">1</string>
+  <string name="lbl_3">3</string>
+  <string name="msg_6_items_found_for">6 Items found for \u201cHoodies\u201d</string>
+  <string name="lbl_5">5</string>
+  <string name="msg_looking_for_another">Looking for another?</string>
+  <string name="lbl_1219">1219</string>
+  <string name="lbl_rp100_000">Rp100.000</string>
+  <string name="lbl_try_again">try again</string>
+  <string name="lbl_name_email_com">name@email.com</string>
+  <string name="lbl_aphrodite">Aphrodite</string>
+  <string name="lbl_checkout">Checkout</string>
+  <string name="lbl_lailyfa_febrina">Lailyfa Febrina</string>
+  <string name="lbl_promo_cord">Promo Cord</string>
+  <string name="lbl_my_details">My Details</string>
+  <string name="lbl_popular">Popular</string>
+  <string name="lbl_ares">Ares</string>
+  <string name="lbl_cart">Cart</string>
+  <string name="lbl_rp150_000">Rp150.000</string>
+  <string name="lbl_filter_sort">Filter  &amp; Sort</string>
+  <string name="lbl_card_holder2">Card Holder</string>
+  <string name="lbl_0_00">$0.00</string>
+  <string name="lbl_promo_code">Promo Code</string>
+  <string name="lbl_total_cost">Total Cost</string>
+  <string name="lbl_welcome_back">Welcome Back</string>
+  <string name="lbl_card_number">Card Number</string>
+  <string name="msg_continue_shopping">continue shopping</string>
+  <string name="lbl_product_name">Product Name</string>
+  <string name="lbl_card_save">CARD SAVE</string>
+  <string name="lbl_password">password</string>
+  <string name="lbl_conditions">Conditions.</string>
+  <string name="lbl_sale">Sale </string>
+  <string name="lbl_or">OR</string>
+  <string name="lbl_rp200_000">Rp200.000</string>
+  <string name="msg_credit_debit_card">Credit / Debit card</string>
+  <string name="msg_not_registered_yet">Not registered yet?</string>
+  <string name="msg_yay_you_re_back">"Yay! You're back! Thanks for shopping with us.
+We have excited deals and promotions going on, grab your pick now! "</string>
+  <string name="lbl_orders">Orders</string>
+  <string name="lbl_help">Help</string>
+  <string name="msg_we_couldn_t_find">"We couldn't find any other items. "</string>
+  <string name="msg_1231_2312_3123">1231 - 2312 - 3123 - 1231</string>
+  <string name="lbl_hoodies">Hoodies</string>
+  <string name="lbl_place_order">place order</string>
+  <string name="msg_by_joining_i_agree">By  joining I agree to receive emails from Bajuku.</string>
+  <string name="lbl_track_order">Track Order</string>
+  <string name="lbl_full_name">Full Name..</string>
+  <string name="msg_delivery_address">Delivery Address</string>
+</resources>

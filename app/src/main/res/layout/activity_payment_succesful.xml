@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearPaymentSuccessful"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_25pxh"
+    android:paddingEnd="@dimen/_25pxh"
+    style="@style/groupStylegray_50">
+
+    <ImageButton
+        android:id="@+id/btnCheckmarkOne"
+        android:layout_width="@dimen/_72pxh"
+        android:layout_height="@dimen/_72pxh"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_52pxv"
+        android:background="@drawable/rectangle_bg_gray_900_01_radius_36"
+        android:paddingHorizontal="@dimen/_16pxh"
+        android:paddingVertical="@dimen/_16pxv"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_checkmark" />
+
+    <TextView
+        android:id="@+id/txtCongratsYour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30pxh"
+        android:layout_marginTop="@dimen/_21pxv"
+        android:layout_marginEnd="@dimen/_4pxh"
+        android:gravity="end"
+        android:letterSpacing="0.03"
+        style="@style/txtWorkSansbold24"
+        android:text="@string/msg_congrats_your_order" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_8pxv"
+        android:alpha="0.5"
+        android:lineSpacingExtra="@dimen/_6pxh"
+        style="@style/txtLatoregular12"
+        android:text="@string/msg_your_items_has_been" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTrackOrder"
+        android:layout_width="@dimen/_335pxh"
+        android:layout_height="@dimen/_52pxv"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_8pxv"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:letterSpacing="0.06"
+        android:paddingHorizontal="@dimen/_30pxh"
+        android:paddingVertical="@dimen/_17pxv"
+        android:singleLine="true"
+        android:text="@string/lbl_track_order"
+        android:textAllCaps="true"
+        style="@style/btnSolidRoundedOutline" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="@dimen/_335pxh"
+        android:layout_height="@dimen/_52pxv"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_18pxv"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:letterSpacing="0.06"
+        android:paddingHorizontal="@dimen/_30pxh"
+        android:paddingVertical="@dimen/_17pxv"
+        android:singleLine="true"
+        android:text="@string/msg_continue_shopping"
+        android:textAllCaps="true"
+        style="@style/btnSolidRoundedOutline" />
+
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_15pxv"
+        android:ellipsize="end"
+        android:letterSpacing="0.06"
+        android:singleLine="true"
+        android:text="@string/lbl_back"
+        android:textAllCaps="true"
+        style="@style/txtWorkSansbold15" />
+
+</LinearLayout>

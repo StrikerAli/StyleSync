@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="userprofile2RowModel" type="com.project.app.modules.search.data.model.Userprofile2RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearUserprofile"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <FrameLayout android:id="@+id/frameStack"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_142pxv" android:layout_width="@dimen/_162pxh">
+            <ImageView android:id="@+id/imageUserImage"
+                android:layout_gravity="bottom|center"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginBottom="@dimen/_49pxv"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_user_gray_900_01"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_user_gray_900_01"/>
+            <ImageView android:id="@+id/imageClownImage"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_142pxh"
+                android:layout_width="@dimen/_162pxh"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+                imageRes="@{@drawable/img_clown_1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_clown_1"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearRowclown"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_9pxv"
+            android:paddingEnd="@dimen/_16pxh"
+            android:paddingStart="@dimen/_16pxh"
+            android:paddingTop="@dimen/_9pxv" style="@style/groupStylegray_300cornerRadius">
+            <LinearLayout android:id="@+id/linearColumnclown"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginStart="@dimen/_38pxh"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtClown"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@{userprofile2RowModel.txtClown}"
+                    style="@style/txtPlayfairDisplayromanbold14_1" tools:text="@string/lbl_clown"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtRp300000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{userprofile2RowModel.txtRp300000}"
+                    style="@style/txtLatosemibold11_1" tools:text="@string/lbl_rp300_000"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageFavoriteImage"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_favorite"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_favorite"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

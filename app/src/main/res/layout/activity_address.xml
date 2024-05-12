@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearDeliveryAddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10pxv"
+    android:paddingTop="@dimen/_10pxv"
+    style="@style/groupStylegray_50">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetStart="0dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtDeliveryAddressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/msg_delivery_address"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/address"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="Address Image" />
+
+    <LinearLayout
+        android:id="@+id/linearAddressFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_20pxv"
+        android:paddingEnd="@dimen/_18pxh"
+        android:paddingStart="@dimen/_18pxh"
+        android:background="@color/black"
+        android:paddingTop="@dimen/_20pxv">
+
+        <EditText
+            android:id="@+id/etAddressName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:text="Name"
+            android:inputType="text"
+            android:padding="@dimen/_10pxh" />
+
+        <EditText
+            android:id="@+id/etAddressLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:text="Address Line 2"
+            android:inputType="text"
+            android:padding="@dimen/_10pxh" />
+
+        <EditText
+            android:id="@+id/etAddressLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:text="Address Line 2"
+            android:inputType="text"
+            android:padding="@dimen/_10pxh" />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:text="City"
+            android:inputType="text"
+            android:padding="@dimen/_10pxh" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/_50pxh"
+        android:layout_marginEnd="@dimen/_30pxh"
+        android:layout_marginStart="@dimen/_25pxh"
+        style="@style/btnSolidRoundedOutline_1"
+        android:text="Save Address"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

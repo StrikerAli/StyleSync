@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_25pxh"
+        android:paddingStart="@dimen/_25pxh" style="@style/groupStylegray_50">
+        <ImageView android:id="@+id/imageClockOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_72pxh"
+            android:layout_width="@dimen/_72pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_clock"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtOhsnaporder"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            style="@style/txtLatoblack24" android:text="@string/msg_oh_snap_order_failed"/>
+        <TextView android:alpha="0.5"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            style="@style/txtLatoregular14" android:text="@string/msg_looks_like_something"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnTryAgain"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_52pxv"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="@dimen/_335pxh"
+            android:letterSpacing="0.06"
+            android:paddingBottom="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+            android:textAllCaps="true"
+            style="@style/btnSolidRoundedOutline" android:text="@string/lbl_try_again"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtBack"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.06" android:singleLine="true"
+            android:textAllCaps="true" style="@style/txtWorkSansbold15" android:text="@string/lbl_back"/>
+    </LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginRegisterVM" type="com.project.app.modules.loginregister.data.viewmodel.LoginRegisterVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearLoginRegister"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <FrameLayout android:gravity="center_horizontal"
+            android:id="@+id/frameImagefull"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageImagetwoOne"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image_2}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image_2"/>
+            <FrameLayout android:id="@+id/frameStackarrowleft"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_794pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageArrowleftOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_32pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_left"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrow_left"/>
+                <LinearLayout android:id="@+id/linearColumnupload"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_365pxv"
+                    android:paddingEnd="@dimen/_161pxh"
+                    android:paddingStart="@dimen/_161pxh"
+                    android:paddingTop="@dimen/_365pxv" style="@style/groupStylewhite_A700">
+                    <ImageView android:id="@+id/imageUploadOne"
+                        android:layout_height="@dimen/_64pxh"
+                        android:layout_width="@dimen/_64pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_upload"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_upload"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearColumnlogIn"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_203pxv"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:layout_marginStart="@dimen/_22pxh"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnLogIn"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.06"
+                        android:paddingBottom="@dimen/_17pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_17pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_log_in"
+                        android:textAllCaps="true"
+                        style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_log_in"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnRegister"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_66pxv"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.06"
+                        android:paddingBottom="@dimen/_17pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_17pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_register"
+                        android:textAllCaps="true"
+                        style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_register"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtOr"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_65pxv"
+                        android:layout_width="wrap_content"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="@{loginRegisterVM.loginRegisterModel.txtOr}"
+                        android:textAllCaps="true"
+                        style="@style/txtMulishregular14" tools:text="@string/lbl_or"/>
+                </LinearLayout>
+                <TextView android:id="@+id/txtWelcometo"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_140pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{loginRegisterVM.loginRegisterModel.txtWelcometo}"
+                    style="@style/txtWorkSansbold32" tools:text="@string/msg_welcome_to_fashion"/>
+                <ImageView android:id="@+id/imageLogooneOne"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_59pxh"
+                    android:layout_marginTop="@dimen/_94pxv"
+                    android:layout_width="@dimen/_70pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_logo_1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_logo_1"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

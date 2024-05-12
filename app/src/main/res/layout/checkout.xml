@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearColumncheckout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollViewScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearCheckoutcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_46pxv"
+            android:paddingEnd="@dimen/_25pxh"
+            android:paddingStart="@dimen/_25pxh"
+            android:paddingTop="@dimen/_46pxv"
+            android:gravity="end">
+
+            <LinearLayout
+                android:id="@+id/linearRowcheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCheckout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/lbl_checkout"
+                    style="@style/txtWorkSansbold18" />
+
+                <ImageView
+                    android:id="@+id/imageCloseOne"
+                    android:layout_width="@dimen/_15pxh"
+                    android:layout_height="@dimen/_15pxh"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_233pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_close_gray_500"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+            
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowdelivery"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_53pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDelivery"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansmedium14" android:text="Address"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSelectmethod"
+                    android:layout_gravity="top"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_154pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansmedium14_1" android:text="Select Address"/>
+                <ImageView android:id="@+id/imageArrowrightOne"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_8pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_right"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowpament"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPament"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansmedium14" android:text="@string/lbl_pament"/>
+
+                <ImageView
+                    android:id="@+id/imageImage"
+                    android:layout_width="@dimen/_44pxh"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_236pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group_6868"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_group_6868" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_24pxv">
+
+                <TextView
+                    android:id="@+id/txtPromocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansmedium14"
+                    android:text="@string/lbl_promo_code" />
+
+                <TextView
+                    android:id="@+id/txtPickdiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/txtPromocode"
+                    android:layout_marginStart="@dimen/_134pxh"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansmedium14_1"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/lbl_pick_discount" />
+
+                <ImageView
+                    android:id="@+id/discount_arrow"
+                    android:layout_width="@dimen/_8pxh"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:src="@drawable/img_arrow_right"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_25pxv">
+
+                <TextView
+                    android:id="@+id/txtTimeZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansmedium14"
+                    android:text="@string/lbl_total_cost" />
+
+                <TextView
+                    android:id="@+id/txtRp350000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_167pxh"
+                    android:layout_toEndOf="@id/txtTimeZone"
+                    android:layout_alignBottom="@id/txtTimeZone"
+                    android:singleLine="true"
+                    style="@style/txtWorkSansmedium14_1"
+                    android:text="@string/lbl_rp350_000" />
+
+                <ImageView
+                    android:id="@+id/imageArrowrightFive"
+                    android:layout_width="@dimen/_8pxh"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:src="@drawable/img_arrow_right"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPlaceOrder"
+                android:layout_width="@dimen/_335pxh"
+                android:layout_height="@dimen/_52pxv"
+                android:layout_marginBottom="@dimen/_53pxv"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:letterSpacing="0.06"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_place_order"
+                android:textAllCaps="true"
+                style="@style/btnSolidRoundedOutline" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
