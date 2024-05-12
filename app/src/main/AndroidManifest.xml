@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -37,6 +38,12 @@
         <activity android:name=".PaymentMethodActivity">
         </activity>
         <activity android:name=".DeliveryActivity">
+        </activity>
+        <activity android:name=".AdminDashboardActivity">
+        </activity>
+        <activity android:name=".AddPromoCodeActivity">
+        </activity>
+        <activity android:name=".AddProductActivity">
         </activity>
 
     </application>

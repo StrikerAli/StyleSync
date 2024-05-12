@@ -3,6 +3,7 @@ package com.aliashraf.project
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -42,12 +43,23 @@ class MainActivity : AppCompatActivity() {
                         if (task.isSuccessful) {
                             // Authentication successful
                             // Display a toast message
-                            Toast.makeText(this, "Authentication successful", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "Authentication successful", Toast.LENGTH_SHORT)
+                                .show()
                             // Create an Intent to start the HomeActivity
-                            val intent = Intent(this, HomeActivity::class.java)
-                            // Start the HomeActivity
-                            startActivity(intent)
-                        } else {
+
+                            if (email.endsWith("@admin.com")) {
+                                // Open AdminDashboardActivity
+                                Log.d("TAG", "onCreate: ${email}")
+                                val intent2 = Intent(this, AdminDashboardActivity::class.java)
+                                startActivity(intent2)
+                            }
+                            else {
+                                val intent = Intent(this, HomeActivity::class.java)
+                                // Start the HomeActivity
+                                startActivity(intent)
+                            }
+                        }
+                         else {
                             // Authentication failed
                             // Display a toast message
                             Toast.makeText(this, "Authentication failed", Toast.LENGTH_SHORT).show()

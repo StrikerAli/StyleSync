@@ -116,7 +116,11 @@ class HomeActivity : AppCompatActivity() {
             }
 
             override fun onBindViewHolder(viewHolder: ViewHolder1, position: Int, model: Product) {
-                viewHolder.bind(model)
+                // Check if the position is odd
+                if (position * 2 < itemCount) {
+                    val product = getItem(position * 2)
+                    viewHolder.bind(product)
+                }
             }
         }
 
@@ -131,16 +135,10 @@ class HomeActivity : AppCompatActivity() {
             }
 
             override fun onBindViewHolder(viewHolder: ViewHolder2, position: Int, model: Product) {
-                viewHolder.bind(model)
-                // Add click listener for "Add to Cart" button
-                viewHolder.addToCartButton.setOnClickListener {
-                    // Add product to cart
-                    addToCart(model)
-                }
-                // Add click listener for "Add to Favorites" button
-                viewHolder.addToFavoritesButton.setOnClickListener {
-                    // Add product to favorites
-                    addToFavorites(model)
+                // Check if the position is even
+                if (position * 2 + 1 < itemCount) {
+                    val product = getItem(position * 2 + 1)
+                    viewHolder.bind(product)
                 }
             }
         }
@@ -240,7 +238,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     // Function to add product to cart
-    private fun addToCart(product: Product) {
+    private fun addToCart2(product: Product) {
         database.child("cart").child(product.id.toString()).setValue(product)
             .addOnSuccessListener {
                 Toast.makeText(this, "Added to Cart", Toast.LENGTH_SHORT).show()
@@ -251,7 +249,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     // Function to add product to favorites
-    private fun addToFavorites(product: Product) {
+    private fun addToFavorites2(product: Product) {
         database.child("favorites").child(product.id.toString()).setValue(product)
             .addOnSuccessListener {
                 Toast.makeText(this, "Added to Favorites", Toast.LENGTH_SHORT).show()
@@ -352,18 +350,90 @@ class ViewHolder1(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
 
 class ViewHolder2(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    private val productNameTextView: TextView = itemView.findViewById(R.id.textViewName)
-    private val productDescriptionTextView: TextView = itemView.findViewById(R.id.textViewDescription)
-    private val productPriceTextView: TextView = itemView.findViewById(R.id.textViewPrice)
-    private val productImageView: ImageView = itemView.findViewById(R.id.imageViewProduct)
-    val addToCartButton: ImageView = itemView.findViewById(R.id.cart)
-    val addToFavoritesButton: ImageView = itemView.findViewById(R.id.favourite)
+    private val productNameTextView2: TextView = itemView.findViewById(R.id.textViewName)
+    private val productDescriptionTextView2: TextView = itemView.findViewById(R.id.textViewDescription)
+    private val productPriceTextView2: TextView = itemView.findViewById(R.id.textViewPrice)
+    private val productImageView2: ImageView = itemView.findViewById(R.id.imageViewProduct)
+    val addToCartButton2: ImageView = itemView.findViewById(R.id.cart)
+    val addToFavoritesButton2: ImageView = itemView.findViewById(R.id.favourite)
 
     fun bind(product: Product) {
-        productNameTextView.text = product.name
-        productDescriptionTextView.text = product.description
-        productPriceTextView.text = "Price: Rs ${product.price}"
-        Glide.with(itemView).load(product.productImageUrl).into(productImageView)
+        productNameTextView2.text = product.name
+        productDescriptionTextView2.text = product.description
+        productPriceTextView2.text = "Price: Rs ${product.price}"
+        Glide.with(itemView).load(product.productImageUrl).into(productImageView2)
+
+        // Set click listener for "Add to Cart" button
+        addToCartButton2.setOnClickListener {
+            showAddToCartDialog2(product)
+        }
+
+        // Set click listener for "Add to Favorites" button
+        addToFavoritesButton2.setOnClickListener {
+            // Add product to favorites
+            addToFavorites2(product)
+        }
+
+    }
+
+    private fun showAddToCartDialog2(product: Product) {
+        val dialogView = LayoutInflater.from(itemView.context).inflate(R.layout.dialog_add_to_cart, null)
+        val editTextQuantity: EditText = dialogView.findViewById(R.id.editTextQuantity)
+        val buttonCancel: Button = dialogView.findViewById(R.id.buttonCancel)
+        val buttonAddToCart: Button = dialogView.findViewById(R.id.buttonAddToCart)
+
+        val dialog = AlertDialog.Builder(itemView.context)
+            .setView(dialogView)
+            .create()
+
+        buttonCancel.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        buttonAddToCart.setOnClickListener {
+            val quantityStr = editTextQuantity.text.toString()
+            if (quantityStr.isNotEmpty()) {
+                val quantity = quantityStr.toInt()
+                addToCart(product, quantity)
+                dialog.dismiss()
+            } else {
+                Toast.makeText(itemView.context, "Please enter quantity", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        dialog.show()
+    }
+
+    private fun addToFavorites2(product: Product) {
+        // Add product to favorites
+        val favoritesRef = FirebaseDatabase.getInstance().reference.child("favorites")
+        favoritesRef.child(product.id.toString()).setValue(product)
+            .addOnSuccessListener {
+                Toast.makeText(itemView.context, "Added to Favorites", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(itemView.context, "Failed to add to Favorites", Toast.LENGTH_SHORT).show()
+            }
+    }
+
+    private fun addToCart(product: Product, quantity: Int) {
+        // Add product to cart with quantity
+        val cartRef = FirebaseDatabase.getInstance().reference.child("cart")
+        val cartItem = CartItem(
+            product.id,
+            product.name,
+            product.description,
+            product.price,
+            product.productImageUrl,
+            quantity
+        )
+        cartRef.child(product.id.toString()).setValue(cartItem)
+            .addOnSuccessListener {
+                Toast.makeText(itemView.context, "Added to Cart", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(itemView.context, "Failed to add to Cart", Toast.LENGTH_SHORT).show()
+            }
     }
 }
 
