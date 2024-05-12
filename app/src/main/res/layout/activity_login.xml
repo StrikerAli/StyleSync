@@ -184,6 +184,13 @@
                 android:hint="@string/lbl"
                 style="@style/etSolidRoundedOutline"
                 tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/btnGuest"
+                android:layout_width="173dp"
+                android:layout_height="36dp"
+                android:layout_marginHorizontal="@dimen/_85pxh"
+                android:text="Login As Guest" />
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -224,7 +231,6 @@
             android:letterSpacing="0.06"
             style="@style/btnSolidRoundedOutline"
             tools:text="Register" />
-
 
 
     </LinearLayout>

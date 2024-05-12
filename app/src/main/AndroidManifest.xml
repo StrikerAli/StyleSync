@@ -45,6 +45,11 @@
         </activity>
         <activity android:name=".AddProductActivity">
         </activity>
+        <activity
+            android:name=".GuestHomeActivity"
+            android:label="Guest Home Activity">
+        </activity>
+
 
     </application>
 

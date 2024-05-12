@@ -72,6 +72,7 @@ class HomeActivity : AppCompatActivity() {
         findViewById<View>(R.id.imageThumbsupThree).setOnClickListener {
             toggleSidebarVisibility()
         }
+
         findViewById<View>(R.id.imageCloseOne).setOnClickListener {
             toggleSidebarVisibility()
         }

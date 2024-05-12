@@ -1,11 +1,13 @@
 package com.aliashraf.project
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
@@ -15,7 +17,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnLogIn: Button
     private lateinit var accountCreateButton: Button
     private lateinit var auth: FirebaseAuth
+    private lateinit var btnGuest: Button
 
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -23,12 +28,22 @@ class MainActivity : AppCompatActivity() {
         // Initialize FirebaseAuth
         auth = FirebaseAuth.getInstance()
 
+
         // Find views by their IDs
         etEmail = findViewById(R.id.etEmail)
         etPassword = findViewById(R.id.etPassword)
         btnLogIn = findViewById(R.id.btnLogIn)
         accountCreateButton = findViewById(R.id.account_create_button)
 
+        btnGuest = findViewById(R.id.btnGuest)
+        // Set OnClickListener for btnGuest
+        btnGuest.setOnClickListener {
+            // Create an Intent to start the HomeActivity
+            val intent = Intent(this, GuestHomeActivity::class.java)
+
+            // Start the HomeActivity
+            startActivity(intent)
+        }
         // Set OnClickListener for btnLogIn
         btnLogIn.setOnClickListener {
             // Get email and password from EditText fields
